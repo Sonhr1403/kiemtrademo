@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<canvas id="theRectangle" width="500px" height="500px" style="border:1px solid;"> </canvas>
+</body>
+</html>
+<script>
+    let Rectangle = function (x, y, width, height) {
+        // this.x;
+        // this.y;
+        // this.width;
+        // this.height;
+
+        let a = document.getElementById("theRectangle").getContext('2d');
+        a.lineWidth = "5";
+        a.lineJoin = "bevel";
+        a.strokeStyle = "#ff0000";
+        a.strokeRect(10, 10, Math.random() * 500, Math.random() * 500);
+    }
+
+    Rectangle();
+</script>

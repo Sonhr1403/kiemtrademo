@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let a = [3, 9, 44, -23, 11];
+    function insertNumberToArray() {
+        let x = parseInt(prompt("Nhap so nguyen x: "));
+        let index = parseInt(prompt("Nhap so nguyen index: "));
+        let temp = new Array(a.length + 1);
+        if (index < 0) {
+            alert(a);
+        } else {
+            for (let i = 0; i <= a.length; i++) {
+                if (i < index) {
+                    temp[i] = a[i];
+                } else if (i === index) {
+                    temp[i] = x;
+                } else {
+                    temp[i] = a[i - 1];
+                }
+            }
+            document.write("Mang moi la: " + temp);
+        }
+       return temp;
+    }
+    insertNumberToArray()
+</script>
