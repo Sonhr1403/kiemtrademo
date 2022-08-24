@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = [3, 5, 8, 9, 2];
+
+    function findAvg() {
+            // let temp = new Array (a.length);
+            // for (let i = 0; i < a.length; i++) {
+            //     temp[i] = a[i];
+            // }
+            // temp.join("+");
+            // console.log(temp.join("+"));
+            // let avg = eval(temp.toString())/a.length;
+            // console.log(eval(temp.toString()));
+            // alert("Diem trung binh la: " + avg);
+
+        let sum = 0;
+        for (let i = 0; i < a.length; i++) {
+            sum += a[i];
+        }
+        let avg = sum / a.length;
+        alert("Diem trung binh la: " + avg);
+    }
+
+    findAvg();
+
+
+</script>
